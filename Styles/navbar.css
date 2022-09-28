@@ -1,0 +1,148 @@
+#navbar{
+
+    height:200px;
+    margin:-10px -10px 20px -10px;
+}
+body{
+    font-family:Maison Neue,sans-serif;
+}
+@import url('http://fonts.cdnfonts.com/css/maison-neue');
+#navbar>div{
+    display:flex;
+    justify-content: space-between;
+    border-bottom:1px solid rgb(228, 228, 228);
+    color:black;
+    align-items:center;
+    padding:0px 30px;
+}
+#navbar>div:first-child>div{
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+    align-items: center;
+}
+
+#navbar>div>div>a{
+    color:rgb(179, 179, 179);
+    font-size:18px;
+    text-decoration: none;
+}
+#navbar>div:first-child a{
+    color:black;
+}
+#navbar>div:first-child a:hover{
+    color:green;
+}
+
+#navbar h1{
+    color:#05ce78;
+    font-size:30px;
+    font-family: 'Maison Neue';
+    font-weight:bolder;
+}
+#navbar>div:nth-child(2)>div{
+    width:70%;
+    margin:auto;
+    padding:17px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#navbar>div:nth-child(2) a:hover{
+    border-bottom:3px solid #05ce78;
+}
+#footer{
+    margin: 20px -10px -10px -10px;
+    font-size:16px;
+}
+#footer>div:first-child{
+    align-items:center;
+    padding:17px 30px;
+    border-top:2px solid grey;
+    border-bottom:2px solid rgb(228, 228, 228);
+    
+}
+#footer>div:first-child>div{
+    display:flex;
+    width:65%;
+    justify-content: space-around;
+}
+#footer>div:first-child a{
+    color:black;
+    text-decoration: none;    
+}
+#footer>div:first-child a:hover{
+    color:green;
+    text-decoration:underline;    
+}
+#footer>div:nth-child(2){
+    width:90%;
+    margin:auto;
+    margin-bottom:20px;
+}
+#footer table{
+    margin:auto;
+    margin-top:40px;
+}
+#footer table th{
+    text-align:left;
+    padding:10px 100px;
+}
+#footer table td{
+    text-align:left;
+    padding:2px 100px;
+}
+#footer table td:hover{
+    color:green;
+    text-decoration:underline;
+    cursor: pointer;
+}
+#footer table+div{
+    margin-top:30px;
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+#footer table+div>div{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    font-size:18px;
+}
+#footer i{
+    color:black
+}
+#footer i:hover{
+    color:#05ce78;
+    cursor:pointer;
+}
+#footer select{
+    padding:10px 15px;
+    margin-left:20px;
+    color:grey;
+    border:0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#footer select:hover{
+    border:1px solid black;
+    cursor:pointer;
+}
+#footer>div:last-child{
+    border-top:2px solid rgb(228, 228, 228);
+    align-items:center;
+    padding:17px 30px;
+    font-size:14px;
+}
+#footer>div:last-child>div{
+    display:flex;
+    width:60%;
+    justify-content: space-around;
+}
+#footer>div:last-child a{
+    color:black;
+    text-decoration: none;    
+}
+#footer>div:last-child a:hover{
+    color:green;
+    text-decoration:underline;    
+}
