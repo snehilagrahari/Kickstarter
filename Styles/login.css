@@ -1,0 +1,53 @@
+body{
+    margin:0;
+}
+#log{
+    background-color:rgb(231, 234, 236);
+    padding:70px;
+    margin:0px;
+}
+#container{
+    width:30%;
+    margin:auto;
+    background-color:white;
+    border:1px solid #eeeeee;
+    padding:30px 20px;
+}
+#container>form{
+    display:flex;
+    flex-direction:column;
+    font-size:18px;
+    gap:15px;
+}
+#container>form>a{
+    color:blue;
+    text-decoration:none;
+    font-size:12px;
+    margin-top:-8px;
+}
+#container>form input{
+    padding:10px 8px;
+    font-size:16px;
+    border:1px solid rgb(168, 168, 168);
+    cursor:default;
+}
+input:focus{
+    outline:1px solid green;
+}
+form>input[type='submit']{
+    background-color:#028858;
+    color:white;
+    border:0px;
+    cursor:pointer;
+
+}
+#container>p{
+    color:grey;
+    font-size:14px;
+}
+#container>.link{
+    text-align:center;
+}
+#container p>a{
+    text-decoration:none;
+}

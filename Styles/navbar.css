@@ -1,10 +1,10 @@
 #navbar{
-
-    height:200px;
     margin:-10px -10px 20px -10px;
+    width:102%;
+    padding:0;
 }
 body{
-    font-family:Maison Neue,sans-serif;
+    font-family:Maison Neue Book,sans-serif;
 }
 @import url('http://fonts.cdnfonts.com/css/maison-neue');
 #navbar>div{
@@ -49,11 +49,13 @@ body{
     align-items: center;
 }
 #navbar>div:nth-child(2) a:hover{
-    border-bottom:3px solid #05ce78;
+    text-decoration:underline 3px solid #05ce78;
 }
 #footer{
     margin: 20px -10px -10px -10px;
     font-size:16px;
+    width:102%;
+    padding:0;
 }
 #footer>div:first-child{
     align-items:center;

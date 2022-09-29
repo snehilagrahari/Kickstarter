@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kickstarter</title>
+    <title>Arts-Kickstarter</title>
     <link rel="stylesheet" href="Styles/homepage.css">
     <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/subpage.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"></script>
-  <link href="http://fonts.cdnfonts.com/css/maison-neue" rel="stylesheet">
 </head>
 <body>
     <section id="navbar">
         <div>
             <div>
-                <a id="dis" href="discover.html">Discover</a>
+                <a href="discover.html">Discover</a>
                 <a href="project.html">Start a Project</a>
             </div>
             <div>
@@ -38,31 +38,23 @@
             </div>
         </div>
     </section>
-    <section class="sec1">
-            <p>Bring a Creative Project to Life</p>
-            <p>ON KICKSTARTER:</p>
-            <div>
-                <div>
-                    <p>227,178</p>
-                    <p>Projects Funded</p>
-                </div>
-                <div>
-                    <p>$6,260,849,266</p>
-                    <p>towards creative work</p>
-                </div>
-                <div>
-                    <p>69,892,785</p>
-                    <p>pledges</p>
-                </div>
-            </div>
+    <section class="head">
+        <h1>Arts</h1>
+        <p>Discover the artists and organizations using Kickstarter to realize ambitious projects in visual art and performance.</p>
+        <div>
+            <a href="">Explore Art</a>
+            <a href="">Explore Dance</a>
+            <a href="">Explore Photography</a>
+            <a href="">Explore Theater</a>
+        </div>
     </section>
     <section class="sec2">
         <div>
             <h4>FEATURED PROJECT</h4>
-            <img src="https://ksr-ugc.imgix.net/assets/038/238/376/9008540269cdd2977bf3f29ef472655b_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1660166707&auto=format&frame=1&q=92&s=4dcd3abb8bf6a7190fb19ac0eedbd0c4" alt="None">
-            <h2>Latimer's Lenormand Deck</h2>
-            <p>A divinatory card deck by Nell Latimer featuring original linocut designs</p> 
-            <p>By Nell</p>
+            <img src="https://ksr-ugc.imgix.net/assets/038/665/097/9d5bff9494bc49905931aee3032af6ab_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1663800272&auto=format&frame=1&q=92&s=409bbadb5d552b19e3bd105ed3c72da8" alt="None">
+            <h2>Betsy</h2>
+            <p>A proper noun; a subject that does and performs; a new dance exploring the phenomenon of performance itself - at La Mama Nov 12-20.</p> 
+            <p>By Neil Greenberg</p>
         </div>
         <div>
             <h4>RECOMMENDED FOR YOU</h4>
@@ -77,44 +69,12 @@
         </div>
     </section>
     <hr color="#eeeeee">
-    <section class="photostatement">
-            <div>
-                <img src="https://ksr-static.imgix.net/witchstarter-opencall-creator-launchdigital-flyer-twitter-1200x628-049269c.png?ixlib=rb-4.0.2&s=ffd530d4c77f4480d193ecdb3968bf13" alt="NONEE">
-            </div>
-            <div>
-                <div>
-                    <h2>Ready to make magic?</h2>
-                    <p>This October, take part in Witchstarter, our first open call for Magic & Divination projects. To participate, launch a project in the theme of magic and the occult, or discover new favorites to pledge to. Deck or dice, book or board game, ideas for Witchstarter campaigns can span any category on Kickstarter.</p>
-                </div>
-                <p>Learn More</p>
-            </div>
-    </section>
-    <hr color="#eeeeee">
-    <section class="slider">
-        <h4>FRESH FAVORITES</h4>
-        <div id="fresh">
-
-        </div>
-    </section>
-    <hr color="#eeeeee">
-    <section class="photostatement">
-            <div>
-                <img src="https://www.belloflostsouls.net/wp-content/uploads/2022/08/kickstarter-round-up-8-24-2022.jpeg" alt="NONEE">
-            </div>
-            <div>
-                <div>
-                    <h2>Bring an RPG zine to Life</h2>
-                    <p>Our annual Zine Quest open call bestows creators with a valiant mission: Bring your RPG to life with maps, adventures, monsters, comics, articles, and interviews! Discover projects inspired by old-school tabletop RPGs, like early D&D.</p>
-                </div>
-                <p>Discover more</p>
-            </div>
-    </section>
-    <hr color="#eeeeee">
-    <section class="slider">
-        <h4>TAKING OFF</h4>
-        <div id="taking">
-
-        </div>
+    <section class="subscribe">
+        <h1>Discover new work and big ideas from established and emerging artists.</h1>
+        <p>Sign up to receive Kickstarter’s Arts newsletter.</p> 
+        <input type="email" id="subemail" placeholder="Enter Your Email">
+        <button id="sub">Subscribe</button>
+        <p id="mess"><i class="fa-solid fa-circle-check"></i>You have Successfully Subscribed to Kickstarter Arts.</p>
     </section>
     <hr color="#eeeeee">
     <section class="photostatement">
@@ -130,12 +90,6 @@
         </div>
     </section>
     <hr color="#eeeeee">
-    <section class="cards">
-        <h4>INTERVIEW FROM THE CREATIVE INDEPENDENTS</h4>
-        <div id="int">
-
-        </div>
-    </section>
     <section id="footer">
         <div>
             <div>
@@ -221,7 +175,6 @@
             </div>
         </div>
     </section>
-
 </body>
 </html>
-<script src="Scripts/index.js"></script>
+<script src="Scripts/subpage.js"></script>
