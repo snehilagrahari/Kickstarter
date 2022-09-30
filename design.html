@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-Kickstarter</title>
+    <title>Design & Tech-Kickstarter</title>
+    <link rel="stylesheet" href="Styles/homepage.css">
     <link rel="stylesheet" href="Styles/navbar.css">
-    <link rel="stylesheet" href="Styles/login.css">
+    <link rel="stylesheet" href="Styles/subpage.css">
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
-    crossorigin="anonymous"
-  ></script>
-  <link href="http://fonts.cdnfonts.com/css/maison-neue" rel="stylesheet">
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="searchBox">
@@ -20,7 +19,7 @@
     <section id="navbar">
         <div>
             <div>
-                <a href="discover.html" id="dis">Discover</a>
+                <a id="dis" href="discover.html">Discover</a>
                 <a href="project.html">Start a Project</a>
             </div>
             <div>
@@ -31,24 +30,82 @@
                 <a href="login.html" id="acc"></a>
             </div>
         </div>
-    </section>
-    <section id="log">
-        <div id="container">
-            <h1>Login</h1>
-            <form>
-                <input type="email" required placeholder="Email" id="email">
-                <input type="password" required placeholder="Password" id="pass">
-                <a href="">Forgot Your Password?</a>
-                <input type="submit" value="Log in">
-            </form>
-            <input type="checkbox">Remember Me
-            <hr color="#eeeeee" size="1px">
-            <p>Get notified when your friends back and launch projects. We'll never post anything on Facebook without your permission.</p>
-            <hr color="#eeeeee" size="1px">
-            <p class="link" >New to kickstarter?<a href="signup.html">Sign up</a></p>
-
+        <div>
+            <div>
+                <a href="arts.html">Arts</a>
+                <a href="comic.html">Comics & Illustration</a>
+                <a href="design.html">Design & Tech</a>
+                <a href="#">Film</a>
+                <a href="#">Food & Craft</a>
+                <a href="#">Games</a>
+                <a href="#">Music</a>
+            </div>
         </div>
     </section>
+    <section class="head">
+        <h1>Design & Tech</h1>
+        <p>From fine design to innovative tech, discover projects from creators working to build a more beautiful future.</p>
+        <div>
+            <a href="#">Explore Design</a>
+            <a href="#">Explore Technology</a>
+        </div>
+    </section>
+    <section class="sec2">
+        <div>
+            <h4>FEATURED PROJECT</h4>
+            <img src="https://ksr-ugc.imgix.net/assets/038/610/658/4783f7ff3bd6c2fe26556e1ace9f77cc_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1663335948&auto=format&frame=1&q=92&s=a34be850f4b8568553a5bfee71aede32" alt="None">
+            <h2>millo air: New Generation Motorless Magnetic Blender</h2>
+            <p>Cordless, allowing you to blend anywhere, powerful enough to crush ice, and so silent that it won’t even wake the baby.</p> 
+            <p>By Adam from Millo</p>
+        </div>
+        <div>
+            <h4>RECOMMENDED FOR YOU</h4>
+            <div id="container">
+
+            </div>
+            <div>
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+            </div>
+        </div>
+    </section>
+    <hr color="#eeeeee">
+    <section class="subscribe">
+        <h1>See the future in your inbox.</h1>
+        <p>Sign up to receive Invent, Kickstarter’s Design and Tech newsletter.</p> 
+        <input type="email" id="subemail" placeholder="Enter Your Email">
+        <button id="sub">Subscribe</button>
+        <p id="mess"><i class="fa-solid fa-circle-check"></i>You have Successfully Subscribed to Kickstarter Design & Tech.</p>
+    </section>
+    <hr color="#eeeeee">
+    <section class="explore">
+        <h1>Explore Comics</h1>
+        <div class="explorebox">
+            <div>
+                <button id="b1">Product Design</button>
+                <button id="b2">Toys</button>
+                <button id="b3">Graphic Design</button>
+                <button id="b4">Technology</button>
+            </div>
+            <div id="exploreCard">
+
+            </div>
+        </div>
+    </section>
+    <section class="photostatement">
+        <div>
+            <img src="https://ksr-ugc.imgix.net/assets/038/610/658/4783f7ff3bd6c2fe26556e1ace9f77cc_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1663335948&auto=format&frame=1&q=92&s=3f7205ff3f33c6f92c1634596e7326e1" alt="NONEE">
+        </div>
+        <div>
+            <div>
+                <h2>The Naked Pan by Crowd Cookware</h2>
+                <p>Discover the purest form of cooking: no coatings, no-nonsense, no compromises on quality. Made from Titanium, designed with our crowd.</p>
+            </div>
+            <p>Discover more</p>
+        </div>
+</section>
+    <hr color="#eeeeee">
     <section id="footer">
         <div>
             <div>
@@ -136,4 +193,4 @@
     </section>
 </body>
 </html>
-<script src="Scripts/login.js"></script>
+<script src="Scripts/subpage.js"></script>

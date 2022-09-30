@@ -1,0 +1,50 @@
+#discover{
+    position:relative;
+    left:40px;
+    width:101%;
+    background-color:white;
+    padding:40px;
+}
+#discover p{
+    font-size:25px;
+    padding:20px 0px;
+    border-bottom:1px solid #eeeeee;
+    color:green;
+}
+#discover h1{
+    font-size:30px;
+    font-weight: lighter;
+}
+#discover h1:hover{
+    color:green;
+}
+#discover span{
+    color:green;
+    font-size:14px;
+}
+#col{
+    position:sticky;
+    top:0px;
+    background-color:white;
+}
+#sections{
+    position:sticky;
+    top:69px;
+    background-color:white;
+}
+#cat{
+    position:sticky;
+    background-color:white;
+    top:137px;
+}
+#discover button{
+    color:green;
+    font-size: 20px;
+    font-weight: bold;
+    position:fixed;
+    border:0;
+    background-color:white;
+    right:40px;
+    top:40px;
+    cursor:pointer;
+}

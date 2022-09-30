@@ -1,0 +1,122 @@
+section{
+    width:90%;
+    margin:auto;
+    padding:70px 0px;
+}
+body{
+    font-family:"mason neue",sans serif;
+}
+.topProject{
+    width:60%;
+    padding:30px 0px;
+}
+.topProject>h1{
+    font-size:60px;
+    width:60%;
+    font-weight:lighter;
+}
+.topProject>button{
+    color:white;
+    font-size:25px;
+    padding:15px 20px;
+    background-color:#028858;
+    border:0;
+    cursor:pointer;
+}
+.topProject button:hover{
+    background-color:#02472f;
+    transition:background-color 0.5s ease-in;
+}
+.photoGallery{
+    display:grid;
+    grid-template-columns: 60% 35%;
+    grid-template-rows: repeat(2,250px);
+    gap:20px;
+}
+.photoGallery img{
+    width:100%;
+    height:100%;
+}
+.photoGallery>#first{
+    grid-row: span 2;
+}
+.quote{
+    position:relative;
+    background-color:#034752;
+    color:White;
+    width:105%;
+    margin:-10px -10px 30px -10px;
+}
+.quote>div{
+    width:60%;
+    margin:auto;
+}
+.quote h2{
+    font-size:100px;
+    position:absolute;
+    left:200px;
+    top:0;
+    font-family:'Segoe UI';
+    color:rgb(25, 37, 53);
+}
+.quote h1{
+    font-size:50px;
+    font-weight: lighter;
+}
+.example {
+    width:75%;
+    padding:30px 0px;
+}
+.example h3{
+    color:grey;
+    font-size:18px;
+}
+.example>.cardbox{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:50px;
+    justify-content: space-around;
+}
+.example img{
+    width:100%;
+}
+.example p{
+    font-size:20px;
+    margin-top:-5px;
+}
+.example p:hover{
+    color:teal;
+    text-decoration: underline;
+    cursor:pointer;
+    transition:all 0.5s ease-out;
+}
+.quoteProject{
+    width:105%;
+    margin:0px -10px; 
+    background-color:#ffcba9;
+}
+.quoteProject>div{
+    width:70%;
+    margin:auto;
+}
+.quoteProject h1{
+    font-size:50px;
+    font-weight: lighter;
+}
+.quoteProject p{
+    font-size:20px;
+    margin-top:0px;
+}
+.quoteProject button{
+    color:white;
+    font-size:25px;
+    padding:15px 20px;
+    background-color:#575757;
+    border:0;
+    margin-top:30px;
+    cursor:pointer;
+}
+.quoteProject button:hover{
+    background-color:#0a0a0a;
+    transition:background-color 0.5s ease-in;
+}
