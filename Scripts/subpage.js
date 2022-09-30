@@ -1,3 +1,15 @@
+let search=document.getElementById("searchButton");
+search.addEventListener("click",searchfun)
+function searchfun()
+{
+    document.getElementById("searchBox").style.visibility="visible";
+}
+let exi=document.getElementById("exit");
+exi.addEventListener("click",closesearchbox)
+function closesearchbox()
+{
+    document.getElementById("searchBox").style.visibility="hidden";
+}
 let Arr2=[
     {
         img:"https://ksr-ugc.imgix.net/assets/038/338/675/269439190225c9c1586cac6427ba5c35_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1661001447&auto=format&frame=1&q=92&s=fa1e84e298a7a1f366d95b2665cb8fc6",
@@ -154,54 +166,54 @@ document.getElementById("container").style.transition="all 2s";
 
 
 let exploreArr1=[{
-    "img": "http://dummyimage.com/250x150.png/5fa2dd/ffffff",
+    "img": "http://inspirationfeed.com/wp-content/uploads/2010/10/22551-500x300.jpg",
     "title": "Nullam molestie nibh in lectus.",
     "p": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
   }, {
-    "img": "http://dummyimage.com/250x150.png/5fa2dd/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUO5c4w0_zD0TvSzbEn2b6BLtzcMVOK-Acw5_f9qlFzvFVSioPfGYob-vf8C8GW3_iowI&usqp=CAU",
     "title": "Quisque porta volutpat erat.",
     "p": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."
   }, {
-    "img": "http://dummyimage.com/250x150.png/5fa2dd/ffffff",
+    "img": "https://www.pngmart.com/files/4/Rally-PNG-Image.png",
     "title": "Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
     "p": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus."
   }];
   let exploreArr2=[{
-    "img": "http://dummyimage.com/250x150.png/ff4444/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQYx7JPL0bRv16ikCO2IVbRPjlihxs8r21tw&usqp=CAU",
     "title": "Duis mattis egestas metus.",
     "p": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque."
   }, {
-    "img": "http://dummyimage.com/250x150.png/5fa2dd/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlU3x9jbsS4MVxxSvZjOuvyF0iYKAmB_Lng&usqp=CAU",
     "title": "Proin interdum mauris non ligula pellentesque ultrices.",
     "p": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum."
   }, {
-    "img": "http://dummyimage.com/250x150.png/5fa2dd/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5WkVv9rVPQQfZb58lXx5ecBzTB6h38tzt9Q&usqp=CAU",
     "title": "In hac habitasse platea dictumst.",
     "p": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat."
   }];
   let exploreArr3=[{
-    "img": "http://dummyimage.com/250x150.png/dddddd/000000",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBpeJBBzsmTC-jglIKq857b01YRoMxbtEjrA&usqp=CAU",
     "title": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
     "p": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
   }, {
-    "img": "http://dummyimage.com/250x150.png/ff4444/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIgsEf9xURraP2hIDnuiveGScwjZrTGsjBOg&usqp=CAU",
     "title": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
     "p": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
   }, {
-    "img": "http://dummyimage.com/250x150.png/dddddd/000000",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9z0A0-zD2gwfWcgzHOHKNZ8xrbmYvgMfJow&usqp=CAU",
     "title": "Duis mattis egestas metus.",
     "p": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
   }];
   let exploreArr4=[{
-    "img": "http://dummyimage.com/250x150.png/cc0000/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_xWad0zpObR9kNO_QlVOk0cVAgz7yxEQT1w&usqp=CAU",
     "title": "Morbi non quam nec dui luctus rutrum.",
     "p": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui."
   }, {
-    "img": "http://dummyimage.com/250x150.png/ff4444/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Giu_aporZaYky84BmopzQkOp9nBLNyCHaA&usqp=CAU",
     "title": "Sed ante.",
     "p": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
   }, {
-    "img": "http://dummyimage.com/250x150.png/5fa2dd/ffffff",
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPY-fh7Q7-v5UBZUVXU8eACRp-vFXeGLgrWz7F6efUofSYSo9XEnjYTGgBFC2UC89IFM0&usqp=CAU",
     "title": "Morbi vel lectus in quam fringilla rhoncus.",
     "p": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus."
   }];
@@ -221,7 +233,7 @@ let exploreArr1=[{
   b4.addEventListener("click",function(){
     appendExplore(exploreArr4,"exploreCard");
   })
-  appendExplore(exploreArr1,"exploreCard")
+  appendExplore(exploreArr1,"exploreCard");
   function appendExplore(data,identity)
   {
     document.getElementById(identity).innerHTML=null;
@@ -241,4 +253,11 @@ let exploreArr1=[{
         card.append(img,title,p);
         document.getElementById(identity).append(card);
     })
+  }
+  let aname=localStorage.getItem("account")||"Login";
+  document.getElementById("acc").innerHTML=aname;
+  document.getElementById("out").addEventListener("click",logout);
+  function logout()
+  {
+    localStorage.removeItem("account");
   }

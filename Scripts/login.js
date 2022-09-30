@@ -8,6 +8,18 @@ p.style.display="none";
 p.style.textAlign="center";
 p.style.marginTop="-15px";
 form.append(p);
+let search=document.getElementById("searchButton");
+search.addEventListener("click",searchfun)
+function searchfun()
+{
+    document.getElementById("searchBox").style.visibility="visible";
+}
+let exi=document.getElementById("exit");
+exi.addEventListener("click",closesearchbox)
+function closesearchbox()
+{
+    document.getElementById("searchBox").style.visibility="hidden";
+}
 
 let userArr=JSON.parse(localStorage.getItem("user-details"))||[];
 function login(event)
@@ -36,7 +48,13 @@ function login(event)
         p.style.display="none";
         alert("Login Successful! Welcome "+name);
         window.location.assign("index.html");
-        document.getElementById("email").value=null
-        document.getElementById("pass").value=null
+        localStorage.setItem("account",name+"<button id=\"out\">logout</button>");
     }    
+}
+let aname=localStorage.getItem("account")||"Login";
+document.getElementById("acc").innerHTML=aname;
+document.getElementById("out").addEventListener("click",logout);
+function logout()
+{
+  localStorage.removeItem("account");
 }

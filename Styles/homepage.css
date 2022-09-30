@@ -1,8 +1,11 @@
+body{
+    margin:0px;
+    padding:0px;
+}
 section{
     width:90%;
     margin:auto;
     padding:40px 0px;
-    margin-bottom:20px;
 }
 
 .sec1{
@@ -134,12 +137,45 @@ h4{
     display:flex;
     justify-content:space-between;
 }
+.slider>div:first-child{
+    align-items:center;
+}
+.slider>div button{
+    border-radius: 50%;
+    padding:8px 15px;
+    background-color:white;
+    border:0px;
+    font-size:18px;
+    font-weight:bold;
+    color:blue;
+    cursor:pointer;
+}
+.slider>div button:hover{
+    border:1px solid blue;
+}
 .slider>div>div{
     cursor:pointer;
 }
-.slider>div>div>p:first-of-type:hover{
+#fresh{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(8,23%);
+    gap:30px;
+    overflow:hidden;
+}
+#fresh div{
+    width:100%;
+}
+#fresh img{
+    width:100%;
+}
+#fresh h2{
+    margin-top:-7px;
+    font-weight:lighter;
+}
+#fresh h2:hover{
+    text-decoration:underline;
     color:green;
-    text-decoration: underline;
 }
 .cards>div{
     display:grid;
@@ -159,6 +195,7 @@ h4{
     color:green;
     padding:15px;
     cursor:pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 

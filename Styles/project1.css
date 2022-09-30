@@ -1,0 +1,65 @@
+@import url('http://fonts.cdnfonts.com/css/maison-neue');
+body{
+    width:90%;
+    margin: 10px auto;
+    font-family:mason neue,sans-serif;
+}
+
+.home{
+    width:80%;
+    margin:auto;
+    text-align:center;
+}
+.home img{
+    height:30px;
+    padding:10px;
+}
+.input{
+    padding:60px 10px 50px 10px;
+    width:55%;
+    margin:auto;
+    text-align:center;
+}
+.input select{
+    width:300px;
+    outline:1px solid rgb(202, 202, 202);
+    padding: 15px 20px;
+    font-size:16px; 
+    border-radius:0px;
+    border:1px solid rgb(204, 204, 204);
+    margin-left:20px;
+}
+.input h1{
+    font-size:40px;
+    font-weight:lighter;
+}
+.input h2{
+    font-size:30px;
+    font-weight: lighter;
+}
+.input h3{
+    font-size:25px;
+    color:grey;
+    font-weight:lighter;
+}
+input select:focus,
+select:hover{
+    outline:1px solid green;
+}
+form hr{
+    position:relative;
+    top:80px;
+}
+form input:last-of-type{
+    position:relative;
+    border:0;
+    border-radius: 0;
+    background-color:rgba(119, 119, 119, 0.466);
+    padding:10px 15px;
+    color:white;
+    font-size:18px;
+    top:90px;
+    left:150px;
+    margin-bottom:70px;
+    cursor:not-allowed;
+}

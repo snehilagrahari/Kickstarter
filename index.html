@@ -12,6 +12,10 @@
   <link href="http://fonts.cdnfonts.com/css/maison-neue" rel="stylesheet">
 </head>
 <body>
+    <div id="searchBox">
+        <input type="text" placeholder="Type to Search...">
+        <button id="exit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
     <section id="navbar">
         <div>
             <div>
@@ -19,11 +23,13 @@
                 <a href="project.html">Start a Project</a>
             </div>
             <div>
-                <a href="index.html"><h1>KICKSTARTER</h1></a>
+                <a href="index.html"><img src="https://theme.zdassets.com/theme_assets/7902/7a63b03d352488898e3a870d14a103ddffe4b5fe.png" alt=""></a>
             </div>
             <div>
-                <a id="search">Search &nbsp;<i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="login.html">Login</a>
+                <div>
+                    <button id="searchButton">Search &nbsp;<i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <a href="login.html" id="acc"></a>
             </div>
         </div>
         <div>
@@ -31,10 +37,10 @@
                 <a href="arts.html">Arts</a>
                 <a href="comic.html">Comics & Illustration</a>
                 <a href="design.html">Design & Tech</a>
-                <a href="film.html">Film</a>
-                <a href="food.html">Food & Craft</a>
-                <a href="game.html">Games</a>
-                <a href="music.html">Music</a>
+                <a href="#">Film</a>
+                <a href="#">Food & Craft</a>
+                <a href="#">Games</a>
+                <a href="#">Music</a>
             </div>
         </div>
     </section>
@@ -91,9 +97,62 @@
     </section>
     <hr color="#eeeeee">
     <section class="slider">
-        <h4>FRESH FAVORITES</h4>
+        <div>
+            <h4>FRESH FAVORITES</h4>
+            <div>
+                <button id="left"><</button>
+                <button id="right">></button>
+            </div>
+        </div> 
         <div id="fresh">
-
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/639/143/8be451e8d511d59721f6a9fffdcf9492_original.jpeg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1663615596&auto=format&frame=1&q=92&s=5700dc157663283e188439901bcfded2" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/495/733/3362fab88f80ded26830a1196ff9bedd_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1662401116&auto=format&frame=1&q=92&s=63893057de2596e31f23b2ab0f9df530" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/428/719/78e1997fd7e96265c3c863a74abb0c8f_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1661830682&auto=format&frame=1&q=92&s=aadcfcf8955078b14efc46c9573abe31" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/513/109/db1f928875c8aa9a9f37e12593393daf_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1662523999&auto=format&frame=1&q=92&s=706027ca1c3e3bc45e18748c23bf82ae" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/725/902/c20f0998594ee7149379be8ad11773f6_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1664319535&auto=format&frame=1&q=92&s=522b4158227bbd9f12c34b44a9fdece5" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/680/535/c3ff370b2fd8cb62508ec949d5c50acf_original.png?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1663922754&auto=format&frame=1&q=92&s=ed2002b45afb9bbbd5a61d41075015a2" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/697/134/0f57999a031cd4eb0d8b70132e27882a_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1664102936&auto=format&frame=1&q=92&s=c3a7e279ba55aebf42a9af0d6693504a" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
+            <div>
+                <img src="https://ksr-ugc.imgix.net/assets/038/718/407/2978d58d043ecfa2b6b6b0f71fa22294_original.jpg?ixlib=rb-4.0.2&crop=faces&w=352&h=198&fit=crop&v=1664276936&auto=format&frame=1&q=92&s=dc02ad7b8005f8812819bea0f51fe203" alt="">
+                <h2>Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.</h2>
+                <p>Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.</p>
+                <p class="by">Dara Durbin</p>
+            </div>
         </div>
     </section>
     <hr color="#eeeeee">
@@ -142,10 +201,10 @@
                 <a href="arts.html">Arts</a>
                 <a href="comic.html">Comics & Illustration</a>
                 <a href="design.html">Design & Tech</a>
-                <a href="film.html">Film</a>
-                <a href="food.html">Food & Craft</a>
-                <a href="game.html">Games</a>
-                <a href="music.html">Music</a>
+                <a href="#">Film</a>
+                <a href="#">Food & Craft</a>
+                <a href="#">Games</a>
+                <a href="#">Music</a>
             </div>
         </div>
         <div>

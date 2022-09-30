@@ -1,3 +1,18 @@
+let search=document.getElementById("searchButton");
+search.addEventListener("click",searchfun)
+function searchfun()
+{
+    document.getElementById("searchBox").style.visibility="visible";
+}
+let exi=document.getElementById("exit");
+exi.addEventListener("click",closesearchbox)
+function closesearchbox()
+{
+    document.getElementById("searchBox").style.visibility="hidden";
+}
+
+
+
 let Arr1=[
     {
         img:"https://ksr-ugc.imgix.net/assets/038/338/675/269439190225c9c1586cac6427ba5c35_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1661001447&auto=format&frame=1&q=92&s=fa1e84e298a7a1f366d95b2665cb8fc6",
@@ -52,27 +67,6 @@ let Arr3=[
         by:"By Branden Duncan"
     }
 ];
-let listArr1=[{
-  "img": "https://ksr-ugc.imgix.net/assets/038/725/902/c20f0998594ee7149379be8ad11773f6_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1664319535&auto=format&frame=1&q=92&s=522b4158227bbd9f12c34b44a9fdece5",
-  "title": "Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-  "p": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-  "by": "Dara Durbin"
-}, {
-  "img": "https://ksr-ugc.imgix.net/assets/038/704/866/6e7b1fb502d1a449a0be435856e93a7f_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1664182774&auto=format&frame=1&q=92&s=176b13632a4d8c68005caafe213c6a33",
-  "title": "Integer tincidunt ante vel ipsum.",
-  "p": "Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-  "by": "Roxi Alleburton"
-}, {
-  "img": "https://ksr-ugc.imgix.net/assets/038/735/011/ca222c8358894035d6bcf68d7205d991_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1664385142&auto=format&frame=1&q=92&s=d9f80470cd294fb30f5d4456d53059f3",
-  "title": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat.",
-  "p": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-  "by": "Christy Lease"
-}, {
-  "img": "https://ksr-ugc.imgix.net/assets/038/738/827/599f8608650b3b1f5724c7980f11ce99_original.png?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1664411531&auto=format&frame=1&q=92&s=0b3acca4c859a723ba055cbfd5c7512d",
-  "title": "Aliquam non mauris. Morbi non lectus.",
-  "p": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-  "by": "Thaine Yendle"
-}];
 let listArr2=[
     {
         "img": "https://ksr-ugc.imgix.net/assets/038/436/793/942c50b2c9b064ab22b6f059910c5051_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1024&h=576&fit=crop&v=1661882162&auto=format&frame=1&q=92&s=245d6e734a7b5679139d5880afd6561b",
@@ -119,7 +113,6 @@ let cardArr=[
     }
 ]
 display(Arr1);
-displaydata(listArr1,"fresh");
 displaydata(listArr2,"taking");
 displaycard(cardArr,"int");
 function display(data)
@@ -173,6 +166,24 @@ function display(data)
         div.append(div1,div2);
         document.querySelector("#container").append(div,hr);
     });
+}
+let left=document.getElementById("left");
+let right=document.getElementById("right");
+left.addEventListener("click",leftslide)
+right.addEventListener("click",rightslide)
+function leftslide()
+{
+    document.getElementById("fresh").scrollBy({
+        left:-1350,
+        behavior:"smooth"
+    })
+}
+function rightslide()
+{
+    document.getElementById("fresh").scrollBy({
+        left:1350,
+        behavior:"smooth"
+    })
 }
 let one=document.getElementById("one");
 one.addEventListener("click",fun1);
@@ -238,3 +249,11 @@ function displaycard(data,identity)
         document.getElementById(identity).append(card);
     })
 }
+let aname=localStorage.getItem("account")||"Login";
+document.getElementById("acc").innerHTML=aname;
+document.getElementById("out").addEventListener("click",logout);
+function logout()
+{
+  localStorage.removeItem("account");
+}
+
