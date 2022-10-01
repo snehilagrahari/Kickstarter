@@ -40,21 +40,19 @@ function login(event)
     }
     if(flag==false)
     {
-        p.style.display="block";
-        return;
+        document.getElementById("wrongdetails").style.display="grid";
+        document.getElementById("closedialog");
+        closedialog.addEventListener("click",closedialogbox);
+        function closedialogbox()
+        {
+            document.getElementById("wrongdetails").style.display="none";
+        }
     }
     else    
     {
-        p.style.display="none";
-        alert("Login Successful! Welcome "+name);
+        localStorage.setItem("account",name);
         window.location.assign("index.html");
-        localStorage.setItem("account",name+"<button id=\"out\">logout</button>");
     }    
 }
 let aname=localStorage.getItem("account")||"Login";
-document.getElementById("acc").innerHTML=aname;
-document.getElementById("out").addEventListener("click",logout);
-function logout()
-{
-  localStorage.removeItem("account");
-}
+document.getElementById("login").innerText=aname;

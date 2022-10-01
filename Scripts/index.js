@@ -174,14 +174,14 @@ right.addEventListener("click",rightslide)
 function leftslide()
 {
     document.getElementById("fresh").scrollBy({
-        left:-1350,
+        left:-350,
         behavior:"smooth"
     })
 }
 function rightslide()
 {
     document.getElementById("fresh").scrollBy({
-        left:1350,
+        left:350,
         behavior:"smooth"
     })
 }
@@ -216,7 +216,6 @@ function displaydata(data,identity)
 {
     data.forEach(function(el){
         let card=document.createElement("div");
-        card.style.width="23%"
         let img=document.createElement("img");
         img.src=el.img;
         img.style.width="100%";
@@ -250,10 +249,28 @@ function displaycard(data,identity)
     })
 }
 let aname=localStorage.getItem("account")||"Login";
-document.getElementById("acc").innerHTML=aname;
-document.getElementById("out").addEventListener("click",logout);
+document.getElementById("login").innerText=aname;
+document.getElementById("login").addEventListener("click",displaylogout);
+let clickcount=0;
+function displaylogout()
+{
+    if(localStorage.getItem("account")!=undefined&clickcount%2==0)
+    {
+        clickcount++;
+        document.getElementById("logoutbox").style.display="block";
+    }
+    else if(localStorage.getItem("account")!=undefined&clickcount%2!=0)
+    {
+        clickcount++;
+        document.getElementById("logoutbox").style.display="none";
+    }
+    else
+        window.location.assign("login.html");
+}
+document.getElementById("logout").addEventListener("click",logout)
 function logout()
 {
-  localStorage.removeItem("account");
+    localStorage.removeItem("account");
+    window.location.reload();
 }
 
