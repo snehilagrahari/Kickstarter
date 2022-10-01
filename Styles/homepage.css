@@ -22,10 +22,12 @@ section{
 .sec1>div{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    width:auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .sec1>div>div{
     border:1px solid rgb(228, 228, 228);
+    padding:0px 20px;
 }
 .sec1>p:first-child{
     font-size:40px;
@@ -46,7 +48,7 @@ section{
 }
 .sec2{
     display:flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 .sec2>div:first-child{
     width:55%;
@@ -177,26 +179,70 @@ h4{
     text-decoration:underline;
     color:green;
 }
+#taking>div{
+    width:23%;
+}
 .cards>div{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:20px;
+    padding:0px 10px 10px 10px;
 }
 .cards>div img{
     width:100%;
+    height:70%;
 }
 .cards>div>a{
     color:black;
     text-decoration:none;
 }
 .cards>div>a:hover{
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     text-decoration:underline;
     color:green;
-    padding:15px;
     cursor:pointer;
     transition: all 0.5s ease-in-out;
 }
+@media all and (min-width:200px) and (max-width:800px){
+    .sec1>div{
+        overflow-x:auto;
+    }
+    .sec2{
+        flex-direction:column;        
+    }
+    .sec2>div:first-child{
+        width:100%;
+        padding-right:0;
+        border-right:0;
+    }
+    .sec2>div:nth-child(2)
+    {
+        width:100%;
+        padding-left:0px;
+    }
+    .photostatement{
+        flex-direction:column;
+    }
+    .photostatement>div:first-child{
+        width:100%;
+    }
+    .photostatement>div:last-child{
+        width:100%;
+    }
+    #taking{
+        flex-direction: column;
+    }
+    #taking>div{
+        width:100%;
+    }
+    #fresh{
+        grid-template-columns:repeat(8,50%);
+        overflow:auto;
+    }
+    .cards>div{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
 
 
 

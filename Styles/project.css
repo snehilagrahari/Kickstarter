@@ -4,7 +4,7 @@ section{
     padding:70px 0px;
 }
 body{
-    font-family:"mason neue",sans serif;
+    font-family:"maison neue",sans serif;
 }
 .topProject{
     width:60%;
@@ -30,7 +30,6 @@ body{
 .photoGallery{
     display:grid;
     grid-template-columns: 60% 35%;
-    grid-template-rows: repeat(2,250px);
     gap:20px;
 }
 .photoGallery img{
@@ -54,7 +53,7 @@ body{
 .quote h2{
     font-size:100px;
     position:absolute;
-    left:200px;
+    left:15%;
     top:0;
     font-family:'Segoe UI';
     color:rgb(25, 37, 53);
@@ -119,4 +118,21 @@ body{
 .quoteProject button:hover{
     background-color:#0a0a0a;
     transition:background-color 0.5s ease-in;
+}
+@media all and (min-width:200px) and (max-width:800px){
+    .example>.cardbox{
+        grid-template-columns: repeat(2,1fr);
+        gap:40px;
+    }
+    .photoGallery{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .photoGallery img{
+        height:auto;
+        margin-top:10px;
+    }
+    .photoGallery>#first{
+        grid-row:span 1;
+    }
 }

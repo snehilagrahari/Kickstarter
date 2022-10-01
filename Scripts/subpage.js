@@ -239,7 +239,6 @@ let exploreArr1=[{
     document.getElementById(identity).innerHTML=null;
     data.forEach(function(el){
         let card=document.createElement("div");
-        card.style.width="30%"
         let img=document.createElement("img");
         img.src=el.img;
         img.style.width="100%"
@@ -255,9 +254,28 @@ let exploreArr1=[{
     })
   }
   let aname=localStorage.getItem("account")||"Login";
-  document.getElementById("acc").innerHTML=aname;
-  document.getElementById("out").addEventListener("click",logout);
+  document.getElementById("login").innerText=aname;
+  document.getElementById("login").addEventListener("click",displaylogout);
+  let clickcount=0;
+  function displaylogout()
+  {
+      if(localStorage.getItem("account")!=undefined&clickcount%2==0)
+      {
+          clickcount++;
+          document.getElementById("logoutbox").style.display="block";
+      }
+      else if(localStorage.getItem("account")!=undefined&clickcount%2!=0)
+      {
+          clickcount++;
+          document.getElementById("logoutbox").style.display="none";
+      }
+      else
+          window.location.assign("login.html");
+  }
+  document.getElementById("logout").addEventListener("click",logout)
   function logout()
   {
-    localStorage.removeItem("account");
-  }
+      localStorage.removeItem("account");
+      window.location.reload();
+  };
+  

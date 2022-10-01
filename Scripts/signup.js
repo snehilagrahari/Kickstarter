@@ -48,8 +48,3 @@ function signup(event)
 }
 let aname=localStorage.getItem("account")||"Login";
 document.getElementById("acc").innerHTML=aname;
-document.getElementById("out").addEventListener("click",logout);
-function logout()
-{
-  localStorage.removeItem("account");
-}

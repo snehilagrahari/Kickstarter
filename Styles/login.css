@@ -6,8 +6,35 @@ body{
     padding:70px;
     margin:0px;
 }
+#wrongdetails{
+    height:100vh;
+    width:100%;
+    display:none;
+    position:fixed;
+    place-items: center;
+}
+#wrongdetails>div{
+    border-top:10px solid red;
+    padding:30px;
+    opacity:1;
+    background-color:white;
+    text-align:center;
+    border-radius:20px;
+    position:relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#closedialog{
+    background-color:red;
+    border:0;
+    border-radius:50%;
+    font-size:20px;
+    color:white;;
+    position:absolute;
+    top:0;
+    left:10px;
+}
 #container{
-    width:30%;
+    width:400px;
     margin:auto;
     background-color:white;
     border:1px solid #eeeeee;
@@ -50,4 +77,10 @@ form>input[type='submit']{
 }
 #container p>a{
     text-decoration:none;
+}
+@media all and (min-width:200px) and (max-width:600px)
+{
+    #container{
+        width:90%;
+    }
 }

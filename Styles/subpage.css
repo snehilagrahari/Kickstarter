@@ -59,8 +59,9 @@
     display:none;
 }
 .explore h1{
-    border-bottom:1px solid rgb(243, 54, 117);
+    border-bottom:3px solid rgba(223, 100, 141, 0.699);
     font-size:35px;
+    padding:10px;
     font-weight: lighter;
 }
 .explorebox{
@@ -90,4 +91,22 @@
     display:flex;
     gap:20px;
     justify-content:space-between;
+}
+.explorebox>div:last-of-type>div{
+    width:30%;
+}
+@media all and (min-width:200px) and (max-width:800px){
+    .explorebox{
+        grid-template-columns: 1fr;
+    }
+    .explorebox>div:first-of-type{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .explorebox>div:last-of-type{
+        flex-direction:column;
+    }
+    .explorebox>div:last-of-type>div{
+        width:100%;
+    }
 }
