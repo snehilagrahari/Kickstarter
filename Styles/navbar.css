@@ -89,7 +89,7 @@ body{
 #logoutbox{
     width:auto;
     position:absolute;
-    top:50px;
+    top:80px;
     display:none;
     background-color:white;
     border:1px solid #cccccc;
@@ -259,6 +259,9 @@ body{
         gap:15px;
         margin:auto;
         text-align:center;
+    }
+    #logoutbox{
+        top:130px;
     }
     #footer table+div>div{
         flex-direction:column;

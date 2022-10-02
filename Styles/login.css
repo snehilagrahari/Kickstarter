@@ -78,6 +78,13 @@ form>input[type='submit']{
 #container p>a{
     text-decoration:none;
 }
+#existingemail{
+    color:white;
+    padding:10px 2px;
+    width:100%;
+    display:none;
+    background-color:red;
+}
 @media all and (min-width:200px) and (max-width:600px)
 {
     #container{
