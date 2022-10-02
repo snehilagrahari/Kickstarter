@@ -4,6 +4,12 @@ function load()
 {
     window.location.assign("project1.html");
 }
+let but1=document.getElementById("next1");
+but1.addEventListener("click",load)
+function load()
+{
+    window.location.assign("project1.html");
+}
 let aname=localStorage.getItem("account")||"Login";
 document.getElementById("login").innerText=aname;
 document.getElementById("login").addEventListener("click",displaylogout);
